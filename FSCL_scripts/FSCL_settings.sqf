@@ -19,7 +19,7 @@
 [
     "FSCL_captiveSystem", // variable name for setting
     "CHECKBOX", // setting type
-    "Set Aicraft Crew Captive", // displayed name
+    "Captive System and AI-Anti-Bailing", // displayed name
     ["Freestyle's Crash Landing"], // category
     [true], // data for setting type
     1, // "_isGlobal" flag

@@ -28,7 +28,7 @@ private _temp = 0;
 		
 		
 		//If helicopter landed remove captive state
-		if((((getPos _vehicle) # 2) <= 2) or (isPlayer _unit)) then 
+		if((((getPos _vehicle) # 2) <= 2) or (isPlayer _unit) or (!(_vehicle isKindOf "Helicopter"))) then 
 		{
 			_unit setCaptive (_unit getVariable ["FSCL_captiveState", false]);		
 		
