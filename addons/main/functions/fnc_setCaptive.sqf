@@ -17,12 +17,12 @@
 
 params ["_aircraft"];
 
-[_aircraft, QGVARMAIN(captiveState), captive _aircraft] call CBA_fnc_setVarNet;
+_aircraft setVariable [QGVARMAIN(captiveState), captive _aircraft];
 
 private _crew = crew _aircraft;
 
 {
-	[_x, QGVARMAIN(captiveState), captive _x] call CBA_fnc_setVarNet;
+	_x setVariable [QGVARMAIN(captiveState), captive _x];
 } forEach _crew;
 
 {
