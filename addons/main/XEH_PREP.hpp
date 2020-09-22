@@ -1,5 +1,5 @@
 
-PREP(effects)
+PREP(effects);
 PREP(handleDamage);
 PREP(initSettings);
 PREP(resetDamage);
