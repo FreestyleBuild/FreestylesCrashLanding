@@ -117,6 +117,6 @@ if (_aircraft isKindOf "Helicopter" && {"tail rotor" in (selectionNames _aircraf
 			deleteVehicle _x;
 		} forEach _effects;
 
-	}, _effects, 10] call CBA_fnc_waitAndExecute;
+	}, [_effects], 10] call CBA_fnc_waitAndExecute;
 
 }, [_aircraft, _effects]] call CBA_fnc_waitUntilAndExecute;
