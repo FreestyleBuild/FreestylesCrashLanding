@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 
 /*
  * Author: Freestyle_Build
@@ -34,7 +34,7 @@ private _crew = crew _aircraft;
 
 		if ((getPos _vehicle #2) < 3 || {isPlayer _unit || {!(_vehicle isKindOf "Helicopter")}}) then {
 
-			private _value = _unit getVariable [QGVARMAIN(captiveState), false]
+			private _value = _unit getVariable [QGVARMAIN(captiveState), false];
 			_unit setCaptive _value;
 
 			private _index = _unit getVariable [QGVARMAIN(captiveEventHandler), -1];

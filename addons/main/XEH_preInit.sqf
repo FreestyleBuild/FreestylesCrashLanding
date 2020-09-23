@@ -4,6 +4,8 @@ ADDON = false;
 
 #include "XEH_PREP.hpp"
 
-call FUNC(initSettings);
+//call FUNC(initSettings);
+
+#include "initSettings.sqf"
 
 ADDON = true;

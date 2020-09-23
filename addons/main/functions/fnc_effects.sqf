@@ -1,4 +1,4 @@
-#include "script_component.hpp"
+#include "..\script_component.hpp"
 
 /*
  * Author: Freestyle_Build
@@ -104,7 +104,7 @@ if (_aircraft isKindOf "Helicopter" && {"tail rotor" in (selectionNames _aircraf
 
 	private _reset = _aircraft getVariable [QGVARMAIN(effects), false];
 
-	isNull _aircraft || {!alive _aircraft || {(getPos _aircraft #2) > 3 || {!_reset}}}
+	isNull _aircraft || {!alive _aircraft || {(getPos _aircraft # 2) < 3 || {!_reset}}}
 
 }, {
 
