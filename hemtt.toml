@@ -5,17 +5,3 @@ prefix = "fscl"
 author = "Freestyle_Build"
 
 modname = "Freestyle's Crash Landing"
-
-
-
-releasebuild = [
-
-    "@zip Freestyle's Crash Landing"
-
-]
-
-
-
-[header_exts]
-
-version= "{{git \"id 8\"}}"

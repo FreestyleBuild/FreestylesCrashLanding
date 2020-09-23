@@ -13,7 +13,7 @@ class Extended_PreInit_EventHandlers {
 class Extended_initPost_EventHandlers {
     class Air {
         class FSCL {
-            init = QUOTE(call FUNC(setup));
+            init = QUOTE([_this select 0] call FUNC(setup));
             exclude[] = {QUOTE(ParachuteBase)};
         };
     };
