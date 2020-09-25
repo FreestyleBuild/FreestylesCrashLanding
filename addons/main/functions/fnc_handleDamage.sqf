@@ -44,8 +44,14 @@ if ((_stateThreshold > _state) and (alive _aircraft)) then
 
 				[_aircraft] remoteExec [QFUNC(resetDamage), 2];
 
-				if (GVARMAIN(captiveSystem)) then {
+				if (GVARMAIN(captiveSystem)) then 
+				{
 					[_aircraft] remoteExec [QFUNC(setCaptive), 2];
+				};
+				
+				if(GVARMAIN(ejectionSystem)) then 
+				{
+					[_aircraft] remoteExec [QFUNC(impactEjection), 2];
 				};
 			};
 
