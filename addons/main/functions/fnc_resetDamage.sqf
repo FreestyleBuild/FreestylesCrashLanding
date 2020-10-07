@@ -28,9 +28,10 @@ params ["_aircraft"];
 
 	if (isNull _aircraft || {!alive _aircraft}) exitWith {};
 
+	[_aircraft, QGVARMAIN(effects), false] call CBA_fnc_setVarNet;
+	[_aircraft, QGVARMAIN(state), 0] call CBA_fnc_setVarNet;
+	
 	if (GVARMAIN(captiveSystem)) then {
-		[_aircraft, QGVARMAIN(state), 0] call CBA_fnc_setVarNet;
-		[_aircraft, QGVARMAIN(effects), false] call CBA_fnc_setVarNet;
 
 		private _value = _aircraft getVariable [QGVARMAIN(captiveState), false];
 		_aircraft setCaptive _value;
