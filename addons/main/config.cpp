@@ -6,7 +6,7 @@ class CfgPatches {
         author = "Freestyle_Build";
         units[] = {};
         weapons[] = {};
-        requiredVersion = 1.98;
+        requiredVersion = 2.00;
         requiredAddons[] = {"cba_main"};
     };
 };

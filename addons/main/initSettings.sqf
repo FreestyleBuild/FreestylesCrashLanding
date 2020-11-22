@@ -19,8 +19,17 @@
 [
     QGVARMAIN(captiveSystem),
     "CHECKBOX",
-    ["Captive System and AI-Anti-Bailing", "Prevent enemies from shooting crashing aircraft, preevent AI passangers from ejecting mid-air"],
+    ["Captive System and AI-Anti-Bailing", "Prevent enemies from shooting crashing aircraft, prevent AI passangers from ejecting mid-air"],
     ["Freestyle's Crash Landing", "Captive and Anti-Bailing"],
+    [true],
+    1
+] call CBA_fnc_addSetting;
+
+[
+    QGVARMAIN(ignoreNonPlayerVehicles),
+    "CHECKBOX",
+    ["Ignore vehicles with no players in them", "If enabled, excludes any AI-only vehicles from the script."],
+    ["Freestyle's Crash Landing", "Ignore NPC vehicles"],
     [true],
     1
 ] call CBA_fnc_addSetting;
@@ -55,7 +64,7 @@
 [
     QGVARMAIN(debug),
     "CHECKBOX",
-    ["Enable denug output", "Enables certain debug outputs of the scripts, only for development purposes."],
+    ["Enable debug output", "Enables certain debug outputs of the scripts, only for development purposes."],
     ["Freestyle's Crash Landing", "Development Settings"],
     [false],
     1

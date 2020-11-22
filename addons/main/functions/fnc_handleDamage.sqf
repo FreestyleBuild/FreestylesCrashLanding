@@ -23,6 +23,17 @@ private _stateThreshold = GVARMAIN(stateThreshold);
 private _damageThreshold = GVARMAIN(damageTreshold) / 100;
 private _state = _aircraft getVariable [QGVARMAIN(state), 0];
 private _result = 0;
+private _ignoreNonPlayerVehicles = GVARMAIN(ignoreNonPlayerVehicles);
+private _playerInVehicle = false;
+
+if (_ignoreNonPlayerVehicles) then
+{
+	private _playerInVehicle = {
+		if (isPlayer _x) exitWith { true }; 
+		false;
+	} forEach (crew _aircraft);
+};
+if (_ignoreNonPlayerVehicles and !_playerInVehicle) exitWith { _damage };
 
 if ((_stateThreshold > _state) and (alive _aircraft)) then 
 {

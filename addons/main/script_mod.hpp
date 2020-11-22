@@ -7,7 +7,7 @@
 #define BETA ##VERSION##-##beta
 #define RC ##VERSION##-##RC
 
-#define REQUIRED_VERSION 1.98
+#define REQUIRED_VERSION 2.00
 #define COMPONENT_NAME QUOTE(FSCL - COMPONENT)
 
 #include "\x\cba\addons\main\script_macros_common.hpp"
