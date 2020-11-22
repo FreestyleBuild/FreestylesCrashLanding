@@ -13,8 +13,8 @@ class CfgPatches {
 
 class CfgMods {
     class PREFIX {
-        dir = "@Freestyle\'s Crash Landing";
-        name = "Freestyle\'s Crash Landing";
+        dir = "@Freestyles Crash Landing";
+        name = "Freestyles Crash Landing";
         picture = "";
         hidePicture = "true";
         hideName = "true";
